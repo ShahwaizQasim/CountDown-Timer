@@ -59,7 +59,7 @@ function CountDown() {
       <h2 className='text-3xl'>{formatTime()}</h2>
       <div className='flex gap-3'>
         <Button label={"Start"} onClick={handleStart} disabled={isActive && !isPause} />
-        <Button label={"Pause"} onClick={handlePause} />
+        <Button label={isPause ? 'Resume' : 'Pause'} onClick={handlePause} />
         <Button label={"Reset"} onClick={handleReset} />
       </div>
     </div>
